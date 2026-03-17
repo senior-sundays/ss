@@ -175,7 +175,7 @@ export default function EventPage({ params }: Props) {
           </h2>
 
           {event.partifulUrl ? (
-            
+            <a
               href={event.partifulUrl}
               target="_blank"
               rel="noopener noreferrer"
