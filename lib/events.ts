@@ -20,7 +20,7 @@ export const EVENTS: CalendarEvent[] = [
     emoji: '🐣',
     tagline: 'Easter.',
     description:
-      'Leeaster on Christopher's Terrace. Dinner Provided!',
+      'Leeaster on Christopher\'s Terrace. Dinner Provided!',
     color: 'yellow',
     // partifulUrl: 'https://partiful.com/e/4nZ8DPHNubrGqBgtIrFp',
   },
