@@ -174,8 +174,8 @@ export default function EventPage({ params }: Props) {
             RSVP
           </h2>
 
-          {event.partifulUrl ? (
-            <a
+{event.partifulUrl ? (
+            
               href={event.partifulUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -223,7 +223,6 @@ export default function EventPage({ params }: Props) {
               </p>
             </div>
           )}
-        </div>
       </section>
 
       {/* ── Event Navigation ─────────────────────────────────── */}
