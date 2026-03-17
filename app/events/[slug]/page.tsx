@@ -184,21 +184,23 @@ export default function EventPage({ params }: Props) {
           </h2>
 
           {event.partifulUrl ? (
-            /* Live Partiful embed */
-            <div
-              className="rounded-2xl overflow-hidden shadow-lg"
-              style={{ border: '2px solid #FFD000' }}
-            >
-              <iframe
-                src={event.partifulUrl}
-                title={`RSVP for ${event.title}`}
-                width="100%"
-                height="560"
-                style={{ border: 'none', display: 'block' }}
-                loading="lazy"
-              />
-            </div>
-          ) : (
+  
+    href={event.partifulUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-3 rounded-2xl px-8 py-4 no-underline"
+    style={{
+      background: isYellow ? '#FFD000' : '#FF6600',
+      fontFamily: 'var(--font-fraunces)',
+      fontWeight: 800,
+      fontSize: '1.2rem',
+      color: isYellow ? '#1A0700' : '#fff',
+      letterSpacing: '-0.01em',
+    }}
+  >
+    🎟️ RSVP on Partiful →
+  </a>
+) : (
             /* Placeholder — fill in partifulUrl in lib/events.ts */
             <div
               className="rounded-2xl p-8 text-center"
