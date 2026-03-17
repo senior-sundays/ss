@@ -7,7 +7,7 @@ export interface CalendarEvent {
   tagline: string;
   description: string;
   location?: string;
-  partifulUrl?: string;     // fill in when you have the partiful link
+  partifulUrls?: string[];     // fill in when you have the partiful link
   color: 'yellow' | 'orange';
 }
 
@@ -22,7 +22,7 @@ export const EVENTS: CalendarEvent[] = [
     description:
       'Leeaster on Christopher\'s Terrace. Dinner Provided!',
     color: 'yellow',
-    partifulUrl: 'https://partiful.com/e/4nZ8DPHNubrGqBgtIrFp',
+    partifulUrls?: string['https://partiful.com/e/4nZ8DPHNubrGqBgtIrFp']:,
   },
   {
     slug: 'pickleball',
