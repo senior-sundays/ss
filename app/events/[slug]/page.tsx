@@ -33,7 +33,6 @@ export default function EventPage({ params }: Props) {
   const textColor = isYellow ? '#1A0700' : '#fff';
   const mutedColor = isYellow ? '#7C4200' : 'rgba(255,255,255,0.75)';
 
-  // Navigate to prev/next event
   const currentIndex = EVENTS.findIndex((e) => e.slug === event.slug);
   const prevEvent    = EVENTS[currentIndex - 1] ?? null;
   const nextEvent    = EVENTS[currentIndex + 1] ?? null;
@@ -45,7 +44,6 @@ export default function EventPage({ params }: Props) {
         className="relative px-6 pt-12 pb-0 overflow-hidden"
         style={{ background: headerGradient }}
       >
-        {/* Back link */}
         <div className="relative max-w-4xl mx-auto">
           <Link
             href="/"
@@ -62,12 +60,10 @@ export default function EventPage({ params }: Props) {
             ← All Events
           </Link>
 
-          {/* Emoji */}
           <div style={{ fontSize: 'clamp(3.5rem, 12vw, 6rem)', lineHeight: 1 }}>
             {event.emoji}
           </div>
 
-          {/* Title */}
           <h1
             className="mt-3 mb-2 leading-none"
             style={{
@@ -81,7 +77,6 @@ export default function EventPage({ params }: Props) {
             {event.title}
           </h1>
 
-          {/* Tagline */}
           <p
             className="mb-8"
             style={{
@@ -95,7 +90,6 @@ export default function EventPage({ params }: Props) {
           </p>
         </div>
 
-        {/* Wave */}
         <div style={{ marginBottom: '-2px' }}>
           <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
             <path
@@ -109,7 +103,6 @@ export default function EventPage({ params }: Props) {
       {/* ── Details ──────────────────────────────────────────── */}
       <section className="px-6 py-12 max-w-2xl mx-auto">
 
-        {/* Date(s) */}
         <div className="mb-8 space-y-1">
           {event.displayDates.map((d) => (
             <div
@@ -129,7 +122,6 @@ export default function EventPage({ params }: Props) {
           ))}
         </div>
 
-        {/* Location badge */}
         {event.location && (
           <div
             className="inline-flex items-center gap-2 mb-8 rounded-full px-4 py-1.5"
@@ -146,7 +138,6 @@ export default function EventPage({ params }: Props) {
           </div>
         )}
 
-        {/* Description */}
         <div
           className="rounded-3xl p-8 mb-10"
           style={{
@@ -168,7 +159,7 @@ export default function EventPage({ params }: Props) {
           </p>
         </div>
 
-        {/* ── RSVP / Partiful ────────────────────────────────── */}
+        {/* ── RSVP ─────────────────────────────────────────────── */}
         <div>
           <h2
             className="mb-6"
@@ -184,24 +175,23 @@ export default function EventPage({ params }: Props) {
           </h2>
 
           {event.partifulUrl ? (
-  
-    href={event.partifulUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center gap-3 rounded-2xl px-8 py-4 no-underline"
-    style={{
-      background: isYellow ? '#FFD000' : '#FF6600',
-      fontFamily: 'var(--font-fraunces)',
-      fontWeight: 800,
-      fontSize: '1.2rem',
-      color: isYellow ? '#1A0700' : '#fff',
-      letterSpacing: '-0.01em',
-    }}
-  >
-    🎟️ RSVP on Partiful →
-  </a>
-) : (
-            /* Placeholder — fill in partifulUrl in lib/events.ts */
+            
+              href={event.partifulUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 rounded-2xl px-8 py-4 no-underline"
+              style={{
+                background: isYellow ? '#FFD000' : '#FF6600',
+                fontFamily: 'var(--font-fraunces)',
+                fontWeight: 800,
+                fontSize: '1.2rem',
+                color: isYellow ? '#1A0700' : '#fff',
+                letterSpacing: '-0.01em',
+              }}
+            >
+              🎟️ RSVP on Partiful →
+            </a>
+          ) : (
             <div
               className="rounded-2xl p-8 text-center"
               style={{
@@ -227,7 +217,6 @@ export default function EventPage({ params }: Props) {
                   fontStyle: 'italic',
                   fontSize: '0.9rem',
                   color: '#7C4200',
-                  marginBottom: '20px',
                 }}
               >
                 Add the Partiful link in <code>lib/events.ts</code> to enable the embed.
