@@ -39,7 +39,7 @@ export const EVENTS: CalendarEvent[] = [
     description:
       'Four Tuesdays. Four chances to dink, drive, and destroy. Weekly pickleball all month long — beginners welcome, competition mandatory.',
     color: 'orange',
-    // partifulUrl: 'https://partiful.com/e/YOUR_EVENT_ID',
+    partifulUrl: 'https://partiful.com/e/YOUR_EVENT_ID',
   },
   {
     slug: 'friend-of-a-friend-dinner',
