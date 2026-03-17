@@ -22,7 +22,7 @@ export const EVENTS: CalendarEvent[] = [
     description:
       'Leeaster on Christopher\'s Terrace. Dinner Provided!',
     color: 'yellow',
-    // partifulUrl: 'https://partiful.com/e/4nZ8DPHNubrGqBgtIrFp',
+    partifulUrl: 'https://partiful.com/e/4nZ8DPHNubrGqBgtIrFp',
   },
   {
     slug: 'pickleball',
