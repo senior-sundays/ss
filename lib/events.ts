@@ -14,11 +14,11 @@ export interface CalendarEvent {
 export const EVENTS: CalendarEvent[] = [
   {
     slug: 'leeaster',
-    title: 'a play on words',
+    title: 'Leeaster',
     dates: ['2026-04-05'],
     displayDates: ['Sunday, April 5'],
     emoji: '🐣',
-    tagline: 'Easter.',
+    tagline: 'A play on words.',
     description: "Leeaster on Christopher's Terrace. Chicken pot pies, salad, charcuterie, desserts provided. You'll get your money's worth!",
     color: 'yellow',
     partifulUrls: ['https://partiful.com/e/4nZ8DPHNubrGqBgtIrFp'],
