@@ -14,12 +14,12 @@ export interface CalendarEvent {
 export const EVENTS: CalendarEvent[] = [
   {
     slug: 'leeaster',
-    title: 'Leeaster',
+    title: 'a play on words',
     dates: ['2026-04-05'],
     displayDates: ['Sunday, April 5'],
     emoji: '🐣',
     tagline: 'Easter.',
-    description: "Leeaster on Christopher's Terrace. Dinner Provided!",
+    description: "Leeaster on Christopher's Terrace. Chicken pot pies, salad, charcuterie, desserts provided. You'll get your money's worth!",
     color: 'yellow',
     partifulUrls: ['https://partiful.com/e/4nZ8DPHNubrGqBgtIrFp'],
   },
@@ -76,7 +76,7 @@ export const EVENTS: CalendarEvent[] = [
     emoji: '🌙',
     tagline: 'First night of the season.',
     description:
-      "The Queens Night Market opens for 2026 and we're going opening night. Every cuisine on the planet, a borough full of energy, and our whole crew. One of the best nights New York has to offer.",
+      "The Queens Night Market opens for 2026 and we're going opening night.",
     location: 'Flushing Meadows Corona Park, Queens',
     color: 'yellow',
     partifulUrls: ['https://partiful.com/e/QUUhcYesxHVSRQZi0Ytz'],
