@@ -67,6 +67,7 @@ export const EVENTS: CalendarEvent[] = [
       "Felix Morello has had his spots long enough. If you\'re drawing spots, they better be positive! Come draw and leave your mark on the city.",
     location: 'Washington Square Park, New York',
     color: 'orange',
+    partifulUrls: ['https://partiful.com/e/QUUhcYesxHVSRQZi0Ytz'],
   },
   {
     slug: 'queens-night-market',
