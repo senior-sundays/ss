@@ -178,7 +178,7 @@ export default function EventPage({ params }: Props) {
             <div className="flex flex-col gap-4">
               {event.displayDates.map((date, i) => (
                 event.partifulUrls![i] ? (
-                  
+                  <a
                     key={date}
                     href={event.partifulUrls![i]}
                     target="_blank"
