@@ -77,10 +77,10 @@ export const EVENTS: CalendarEvent[] = [
     emoji: '🌙',
     tagline: 'First night of the season.',
     description:
-      "The Queens Night Market opens for 2026 and we're going opening night.",
+      "The Queens Night Market opens for 2026 and we're going opening night. Departure time TBD",
     location: 'Flushing Meadows Corona Park, Queens',
     color: 'yellow',
-    partifulUrls: ['https://partiful.com/e/QUUhcYesxHVSRQZi0Ytz'],
+    partifulUrls: ['https://partiful.com/e/k8LpoXEUl6GtUgaUa33e'],
   },
 ];
 
