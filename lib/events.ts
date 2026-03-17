@@ -18,11 +18,11 @@ export const EVENTS: CalendarEvent[] = [
     dates: ['2026-04-05'],
     displayDates: ['Sunday, April 5'],
     emoji: '🐣',
-    tagline: 'Easter, Senior Style.',
+    tagline: 'Easter.',
     description:
-      'We kick off Senior Sundays the only way we know how — Leeaster. Part Easter, all us. Egg hunts, pastel fits, and the kind of Sunday that sets the tone for the whole month.',
+      'Leeaster on Christopher's Terrace. Dinner Provided!',
     color: 'yellow',
-    // partifulUrl: 'https://partiful.com/e/YOUR_EVENT_ID',
+    // partifulUrl: 'https://partiful.com/e/4nZ8DPHNubrGqBgtIrFp',
   },
   {
     slug: 'pickleball',
