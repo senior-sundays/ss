@@ -64,7 +64,7 @@ export const EVENTS: CalendarEvent[] = [
     emoji: '🖍️',
     tagline: "Taking on Felix Morello's spots.",
     description:
-      "We're bringing chalk to Washington Square Park and taking on the best real estate in the park. Felix Morello has had his spots long enough. Come draw, claim your square, leave your mark on the city.",
+      "Felix Morello has had his spots long enough. If you\'re drawing spots, they better be positive! Come draw and leave your mark on the city.",
     location: 'Washington Square Park, New York',
     color: 'orange',
   },
