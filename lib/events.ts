@@ -79,6 +79,7 @@ export const EVENTS: CalendarEvent[] = [
       "The Queens Night Market opens for 2026 and we're going opening night. Every cuisine on the planet, a borough full of energy, and our whole crew. One of the best nights New York has to offer.",
     location: 'Flushing Meadows Corona Park, Queens',
     color: 'yellow',
+    partifulUrls: ['https://partiful.com/e/QUUhcYesxHVSRQZi0Ytz'],
   },
 ];
 
