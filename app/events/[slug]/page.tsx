@@ -174,23 +174,45 @@ export default function EventPage({ params }: Props) {
             RSVP
           </h2>
 
-{event.partifulUrl ? (
-            
-              href={event.partifulUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 rounded-2xl px-8 py-4 no-underline"
-              style={{
-                background: isYellow ? '#FFD000' : '#FF6600',
-                fontFamily: 'var(--font-fraunces)',
-                fontWeight: 800,
-                fontSize: '1.2rem',
-                color: isYellow ? '#1A0700' : '#fff',
-                letterSpacing: '-0.01em',
-              }}
-            >
-              🎟️ RSVP on Partiful →
-            </a>
+          {event.partifulUrls && event.partifulUrls.length > 0 ? (
+            <div className="flex flex-col gap-4">
+              {event.displayDates.map((date, i) => (
+                event.partifulUrls![i] ? (
+                  
+                    key={date}
+                    href={event.partifulUrls![i]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 rounded-2xl px-8 py-4 no-underline"
+                    style={{
+                      background: isYellow ? '#FFD000' : '#FF6600',
+                      fontFamily: 'var(--font-fraunces)',
+                      fontWeight: 800,
+                      fontSize: '1.1rem',
+                      color: isYellow ? '#1A0700' : '#fff',
+                      letterSpacing: '-0.01em',
+                    }}
+                  >
+                    🎟️ RSVP for {date} →
+                  </a>
+                ) : (
+                  <div
+                    key={date}
+                    className="rounded-2xl px-8 py-4"
+                    style={{
+                      background: '#fff',
+                      border: '2px dashed #FFD000',
+                      fontFamily: 'var(--font-lora)',
+                      fontStyle: 'italic',
+                      fontSize: '0.9rem',
+                      color: '#7C4200',
+                    }}
+                  >
+                    🎟️ {date} — RSVP coming soon
+                  </div>
+                )
+              ))}
+            </div>
           ) : (
             <div
               className="rounded-2xl p-8 text-center"
@@ -223,6 +245,7 @@ export default function EventPage({ params }: Props) {
               </p>
             </div>
           )}
+        </div>
       </section>
 
       {/* ── Event Navigation ─────────────────────────────────── */}
