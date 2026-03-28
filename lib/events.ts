@@ -103,7 +103,7 @@ export const EVENTS: CalendarEvent[] = [
     description:
       "We're refining our palates before we enter the workforce, because knowing your Cab Sav from your Pinot Noir matters just as much as knowing your way around a conference room. Join us at Christopher's for a wine tasting and charcuterie night. Meat, cheeze, and of course wine included.
 ",
-    color: 'orange',
+    color: 'yellow',
   },
 ];
 
