@@ -93,6 +93,18 @@ export const EVENTS: CalendarEvent[] = [
       "Drinks & dinner provided with your $30 ticket purchase. Tickets drop Sunday the fifth.",
     color: 'orange',
   },
+    {
+    slug: 'wine-tasting',
+    title: 'Wine Tasting',
+    dates: ['2026-04-26'],
+    displayDates: ['Sunday, April 26'],
+    emoji: '🍷',
+    tagline: 'Pour Decisions, Refined Palates',
+    description:
+      "We're refining our palates before we enter the workforce, because knowing your Cab Sav from your Pinot Noir matters just as much as knowing your way around a conference room. Join us at Christopher's for a wine tasting and charcuterie night. Meat, cheeze, and of course wine included.
+",
+    color: 'orange',
+  },
 ];
 
 export function getEventBySlug(slug: string): CalendarEvent | undefined {
