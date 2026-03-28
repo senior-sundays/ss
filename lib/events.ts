@@ -82,6 +82,17 @@ export const EVENTS: CalendarEvent[] = [
     color: 'yellow',
     partifulUrls: ['https://partiful.com/e/k8LpoXEUl6GtUgaUa33e'],
   },
+  {
+    slug: 'stern-semi',
+    title: 'Stern Semi Formal',
+    dates: ['2026-04-17'],
+    displayDates: ['Thursday, April 17'],
+    emoji: '🪩',
+    tagline: '@Bowery Savings Bank',
+    description:
+      "Drinks & dinner provided with your $30 ticket purchase. Tickets drop Sunday the fifth.",
+    color: 'orange',
+  },
 ];
 
 export function getEventBySlug(slug: string): CalendarEvent | undefined {
