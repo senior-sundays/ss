@@ -19,7 +19,7 @@ export const EVENTS: CalendarEvent[] = [
     displayDates: ['Sunday, April 5'],
     emoji: '🐣',
     tagline: 'A play on words.',
-    description: "Leeaster on Christopher's Terrace. Ham, sides, dessert of course, & Christopher's Charcuterie provided. You'll get your money's worth! Any Q's reach out to Christopher!",
+    description: "Leeaster on Christopher's Terrace. Ham, turkey, sides, dessert (of course), & Charcuterie provided. You'll get your money's worth! Any Qs reach out to Christopher!",
     color: 'yellow',
     partifulUrls: ['https://partiful.com/e/4nZ8DPHNubrGqBgtIrFp'],
   },
